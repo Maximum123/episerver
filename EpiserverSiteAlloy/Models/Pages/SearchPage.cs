@@ -13,6 +13,7 @@ namespace EpiserverSiteAlloy.Models.Pages
         GUID = "AAC25733-1D21-4F82-B031-11E626C91E30",
         GroupName = Global.GroupNames.Specialized)]
     [SiteImageUrl]
+    [Access(Roles ="SearchGroup")]
     public class SearchPage : SitePageData, IHasRelatedContent, ISearchPage
     {
         [Display(

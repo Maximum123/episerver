@@ -1,0 +1,10 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model MyCustomBlock
+
+<div class="span8">
+    <h2  @Html.EditAttributes(m => m.Heading)>@Model.Heading</h2>
+    <img src="@Url.ContentUrl(Model.MainImage)" />
+    <p  @Html.EditAttributes(m => m.Description)>@Model.Description</p>
+</div>
